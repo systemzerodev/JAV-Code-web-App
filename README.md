@@ -1,16 +1,54 @@
-# React + Vite
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1000&auto=format&fit=crop" alt="Movie Catalog Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  # 🎬 JAV-Code-web-App
 
-Currently, two official plugins are available:
+  Sebuah aplikasi web modern untuk mengelola dan menampilkan katalog film dengan antarmuka yang bersih dan responsif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+  ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+</div>
 
-## React Compiler
+<br />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Tentang Proyek
 
-## Expanding the ESLint configuration
+Aplikasi web ini dibangun untuk menyimpan dan menampilkan data film secara terstruktur. Pengguna dapat melihat detail film yang disajikan dalam tata letak yang ramah pengguna (dukungan *Mobile* & *Desktop*), lengkap dengan poster film dan metadata terkait.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✨ Fitur Utama
+- **Tampilan Detail Komprehensif:** Menampilkan poster film di sisi kiri (desktop) atau atas (mobile) dan informasi detail di sisi lainnya.
+- **Informasi Lengkap:** Memuat Kode Film, Judul (Inggris & Jepang), Nama Pemeran, Tanggal Rilis, Rating, dan Sinopsis.
+- **Progressive Web App (PWA) Ready:** Dirancang agar dapat diinstal di perangkat *mobile* seperti aplikasi *native*.
+- **Database Dinamis:** Terintegrasi dengan **Supabase** (PostgreSQL) untuk manajemen data yang cepat dan aman.
+
+## 🛠️ Tech Stack
+- **Frontend:** React.js + Vite
+- **Styling:** Tailwind CSS
+- **Backend & Database:** Supabase (PostgreSQL)
+
+## 🚀 Panduan Instalasi Lokal
+
+### 1. Clone Repositori
+```bash
+git clone [https://github.com/USERNAME_ANDA/movie-catalog-webapp.git](https://github.com/systemzerodev/JAV-Code-web-App.git)
+cd JAV-Code-web-App
+```
+
+### 2. Instal Dependensi
+```bash
+npm install
+```
+
+### 3. Konfigurasi Environment Variables
+Buat file `.env.local` di *root* direktori proyek dan tambahkan kredensial Supabase Anda:
+```env
+VITE_SUPABASE_URL=your_supabase_url_here
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here
+```
+
+### 4. Jalankan Server
+```bash
+npm run dev
+```
